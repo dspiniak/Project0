@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Tech</title>
+    </head>
+    <body>
+        <header>
+            Here are the best resources in Tech | <a href="index.html">Go back</a>
+        </header>
+        <main>
+            Best people in tech to follow is:
+            <p>
+                <table style="width:100%" id="table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Content Type</th>
+                    </tr>
+                    <tr>
+                        <td>Naval Ravikant</td>
+                        <td>Twitter</td>
+                        <td><blockquote class="twitter-tweet"><p lang="en" dir="ltr">How to Get Rich (without getting lucky):</p>&mdash; Naval (@naval) <a href="https://twitter.com/naval/status/1002103360646823936?ref_src=twsrc%5Etfw">May 31, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></td>
+                    </tr>
+                    <tr>
+                        <td>Paul Graham</td>
+                        <td>Essays</td>
+                        <td><iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/fa834735-8397-4976-821b-7f6d761a7ffa?dark=false"></iframe></td>
+                    </tr>
+                    <tr>
+                        <td>a16z Venture Capital</td>
+                        <td>Podcast</td>
+                        <td><a href="http://www.paulgraham.com/"><img src="https://sep.yimg.com/ay/paulgraham/index-1.gif" alt="Paul Graham Blog" width= 100 height= 100></td>
+                    </tr>
+                </table>
+            </p>
+            <p>
+                I also know where you are!
+            </p>
+            <p>Click the button to get your coordinates.</p>
+
+            <button onclick="getLocation()">Try It</button>
+
+            <p id="demo"></p>
+
+            <script>
+            var x = document.getElementById("demo");
+
+            function getLocation() {
+              if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+              } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+              }
+            }
+
+            function showPosition(position) {
+              x.innerHTML = "Latitude: " + position.coords.latitude +
+              "<br>Longitude: " + position.coords.longitude;
+            }
+            </script>
+        </main>
+    </body>
+    <footer>
+        Created by Diego Spiniak ©
+    </footer>
+</html>

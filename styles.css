@@ -1,0 +1,50 @@
+body
+{
+    text-align: left;
+    color: #484848;
+}
+
+header
+{
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    background-color: #fcdbd9;
+    height: 100px;
+    line-height: 100px;
+}
+
+main
+{
+    font-size: medium;
+    margin: 50px;
+}
+
+#table
+{
+    background-color: lightgrey;
+}
+
+*
+{
+    font-family: calibri;
+}
+
+footer
+{
+    font-size: small;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background-color: #DCDCDC;
+}
+
+.specialFooter
+{
+    color: red;
+}
+
+div p
+{
+    font-style: italic;
+}
